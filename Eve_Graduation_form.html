@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Verification</title>
+    <style>
+        /* Set the background color of the entire page to light pink */
+        html {
+            background-color: #F5F5F5; /* Light pink color code */
+            font-size: 18px; /* Increase the base font size */
+        }
+
+        /* Center the container horizontally and vertically */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Center-align text within the container */
+        .container {
+            text-align: center;
+        }
+
+        /* Additional styles for your form elements */
+        form {
+            background-color: #E0D2E5;
+            padding: 30px; /* Increase padding for form */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Increase font size for headers and paragraphs */
+        h1 {
+            font-size: 28px; /* Adjust the font size for h1 */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
+        p {
+            font-size: 24px; /* Adjust the font size for paragraphs */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
+        /* Increase font size for form elements */
+        label, input, textarea, checkbox {
+            font-size: 20px; /* Adjust the font size as needed */
+            margin-bottom: 10px; /* Add some spacing between elements */
+        }
+
+        /* Style the submit button with the desired color */
+        input[type="submit"] {
+            background-color: #A884B6; /* Set the background color to #A884B6 */
+            color: white;
+            border: none;
+            padding: 12px 24px; /* Increase padding for the button */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px; /* Increase font size for the button text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 36px;">Καλώς όρισες!!!</h1>
+        <p>Για να αποκτήσεις πρόσβαση στο επόμενο βήμα πρέπει να βρείς πρώτα τον σωστό κωδικό.</p>
+        <p>Καταχώρησε την σωστή ημερομηνία με την μορφή ΗΗ/ΜΜ/ΧΧΧΧ:</p>
+        <form action="submit.php" method="post" onsubmit="return validatePassword()">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            
+            <input type="checkbox" id="myCheckbox" name="myCheckbox" value="yes" required>
+            <label for="myCheckbox">Αποδέχομαι τους όρους χρήσης και αναγνωρίζω πως ο τίτλος<br>"Ψάρι Κλόουν" μου ανήκει δικαιωματικά.</label>
+            <br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
