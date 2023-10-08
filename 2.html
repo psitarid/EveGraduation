@@ -5,134 +5,66 @@
     <title>Quiz Page</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
+        /* Set the background color of the entire page to light pink */
+        html {
+            background-color: #F5F5F5; /* Light pink color code */
+            font-size: 18px; /* Increase the base font size */
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 75vh;
             margin: 0 400px; /* Add margins to both left and right sides */
         }
         .quiz-container {
             text-align: center;
         }
+        p {
+            font-size: 24px; /* Adjust the font size for paragraphs */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+        button {
+            font-size: 22px; /* Increase the font size for the button */
+            margin-top: 20px; /* Move the button down */
+            margin-left: 400px; /* Keep the same left margin as in your example */
+            background-color: #A884B6; /* Set the background color to #A884B6 */
+            color: white; /* Set the text color to white */
+            border: none; /* Remove border */
+            padding: 12px 24px; /* Add padding */
+            border-radius: 5px; /* Add rounded corners */
+            cursor: pointer;
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px; /* Reduce font size for smaller screens */
+            }
+            .quiz-container {
+                margin: 0 20px; /* Adjust margins for smaller screens */
+            }
+            button {
+                margin-left: 0; /* Remove left margin for mobile devices */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="quiz-container">
-        <h1>Τίτλος</h1>
+        <h1>Συγχαρητήρια Μωρό μου!!!❤️<br></h1>
         <p>Τώρα που έχεις πετύχει έναν μεγάλο σου στόχο έχω και 
-           γω με την σειρά μου δυο λογάκια που θέλω να σου πω, όπως τα νιώθω. 
-           Είναι πιο δύσκολο να σου τα πω προφορικά γιατί κοιτάω 
-           τα ματάκια σου και τα χάνω. Έτσι, αποφάσισα να σου τα γράψω.<br>
-           Θέλω να ξέρεις ότι είμαι πολύ υπερήφανος για σένα. 
-           Δεν ήμουν αρκετά τυχερός να βρίσκομαι δίπλα σου νωρίτερα, όμως ακόμα και αυτό το
-           μικρό κομματάκι στο τέλος των σπουδών σου ήταν αρκετό για να καταλάβω πολλά. 
-           Μου έδειξε πόσο αποφασισμένη είσαι να πετύχεις τον στόχο σου,  
-           πόσο θέλεις να κάνεις τους δικούς σου ανθρώπους υπερήφανους, πόσο θέλεις
-           να πατήσεις γρήγορα στα πόδια σου για να μην τους ανησυχείς. Και αυτή είναι
-           μια πολύ καλή συνταγή για να πετύχεις πάρα πολλά. Όταν το κίνητρο και 
-           η ανατροφοδότηση σου πηγάζουν από τους αγαπημένους σου υπάρχουν πολύ λίγα 
-           πράγματα που δεν μπορείς να κάνεις.<br></br>
-
-           Συμβουλή 1η:<br>
-           Στη ζωή παίρνουμε πάντα αυτό που χρειαζόμαστε και όχι αυτό που θέλουμε. Οπότε μένει απλά 
-           να επιμείνουμε και να βρίσκουμε τι λείπει μέχρι να συγκεντρώσουμε αυτά που χρειαζόμαστε 
-           και να φτάσουμε σε αυτό που θέλουμε. Δεν μπορούμε να τα ξέρουμε όλα από την αρχή.
-           Έτσι, βλέπουμε ότι όλα γίνονται για καλό γιατί όποιο και να είναι το αποτέλεσμα γίνεται 
-           χρήσιμη πληροφορία για μελλοντική χρήση και τίποτα δεν είναι αδύνατο. Μπορεί απλά να 
-           χρειάζεται πιο πολλά βήματα. Στο κάτω κάτω κανείς δεν είπε ότι πρέπει ντε και καλά να 
-           φτάσουμε στον στόχο μας με την πρώτη προσπάθεια. Ούτε και μεις πρέπει να έχουμε αυτή την 
-           απαίτηση από τον εαυτό μας. Όλα είναι ένα μάθημα. <br></br>
-
-           Όπως τότε που χάσαμε τα κλειδιά και το χαμόγελό δεν έφυγε λεπτό από το πρόσωπό σου, ή τότε
-           που 
-
-           Μην ακούς κανέναν και τίποτα, μείνε το ίδιο αυθεντική και κράτα αυτή την 
-           ενέργεια σου που σπανίζει και δεν θα χάσεις. Εγώ όσο μπορώ θα είμαι δίπλα σου να σε 
-           σπρώχνω λίιιιγο όταν πέφτεις και θα προσπαθώ να σου φοράω αυτό το χαμόγελο που με τρελαίνει 
-           για να συνεχίσεις να κάνεις αυτό που αγαπάς.
-        </p>
-        <div id="quiz">
-            <div class="question">
-                <p>Question 1: What is the capital of France?</p>
-                <input type="radio" name="q1" value="a"> a) Paris<br>
-                <input type="radio" name="q1" value="b"> b) London<br>
-                <input type="radio" name="q1" value="c"> c) Berlin<br>
-            </div>
-        </div>
-        <button id="submit-button">Submit</button>
-        <div id="results"></div>
+            γω με την σειρά μου δυο λογάκια που θέλω να σου πω, όπως τα νιώθω. 
+            Είναι πιο δύσκολο να σου τα πω προφορικά γιατί κοιτάω 
+            τα ματάκια σου και τα χάνω. Έτσι, αποφάσισα να σου τα γράψω.<br>
+			<br></br>
+        <button onclick="redirectToNextPage()">Συνέχεια</button>
     </div>
+
     <script>
-        /*Define your quiz questions and answers as an array of objects*/
-        const quizQuestions = [
-            {
-                question: 'What is the capital of France?',
-                answers: {
-                    a: 'Paris',
-                    b: 'London',
-                    c: 'Berlin'
-                },
-                correctAnswer: 'a'
-            },
-            /*Add more questions similarly*/
-        ];
-
-        /*Function to build the quiz interface*/
-        function buildQuiz() {
-            const quiz = document.getElementById('quiz');
-            quiz.innerHTML = ''; // Clear any existing content
-
-            quizQuestions.forEach((question, index) => {
-                const questionDiv = document.createElement('div');
-                questionDiv.classList.add('question');
-
-                const questionText = document.createElement('p');
-                questionText.textContent = `Question ${index + 1}: ${question.question}`;
-
-                questionDiv.appendChild(questionText);
-
-                /* Loop through the answer options*/
-                for (const option in question.answers) {
-                    const label = document.createElement('label');
-                    const radio = document.createElement('input');
-                    radio.type = 'radio';
-                    radio.name = `q${index}`;
-                    radio.value = option;
-
-                    label.appendChild(radio);
-                    label.appendChild(document.createTextNode(` ${question.answers[option]}`));
-
-                    questionDiv.appendChild(label);
-                }
-
-                quiz.appendChild(questionDiv);
-            });
+        function redirectToNextPage() {
+            window.location.href = "3.html";
         }
-
-        /*Function to calculate and display the user's score*/
-        function showResults() {
-            const quiz = document.getElementById('quiz');
-            const resultsContainer = document.getElementById('results');
-            let score = 0;
-
-            quizQuestions.forEach((question, index) => {
-                const selectedAnswer = document.querySelector(`input[name="q${index}"]:checked`);
-
-                if (selectedAnswer && selectedAnswer.value === question.correctAnswer) {
-                    score++;
-                }
-            });
-
-            resultsContainer.textContent = `You scored ${score} out of ${quizQuestions.length} questions.`;
-        }
-
-        /*Add event listener to the submit button*/
-        const submitButton = document.getElementById('submit-button');
-        submitButton.addEventListener('click', showResults);
-
-        /*Call the buildQuiz function to initialize the quiz*/
-        buildQuiz();
     </script>
 </body>
 </html>
