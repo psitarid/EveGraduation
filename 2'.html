@@ -72,25 +72,6 @@
             /* Add any other style adjustments for mobile devices here */
         }
     </style>
-    <script>
-        function validatePassword() {
-            var passwordInput = document.getElementById("password");
-            var password = passwordInput.value;
-            
-            // Replace "your_password_here" with the actual correct password
-            var correctPassword = "2";
-
-            if (password === correctPassword) {
-                // Password is correct, redirect to 2.html
-                window.location.href = "2.html";
-                return false; // Prevent form submission
-            } else {
-                // Password is incorrect, show an alert and prevent form submission
-                alert("Λάθος κωδικός. Παρακαλώ προσπαθήστε ξανά.");
-                return false; // Prevent form submission
-            }
-        }
-    </script>
 </head>
 <body>
     <div class="container">
@@ -99,7 +80,8 @@
             γω με την σειρά μου δυο λογάκια που θέλω να σου πω, όπως τα νιώθω.
             Είναι πιο δύσκολο να σου τα πω προφορικά γιατί κοιτάω 
             τα ματάκια σου και τα χάνω. Έτσι, αποφάσισα να σου τα γράψω.</p>
-            
+        
+        <form action="3.html" method="get">
             <input type="submit" value="Συνέχεια">
         </form>
     </div>
