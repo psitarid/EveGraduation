@@ -14,8 +14,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 75vh;
-            margin: 0; /* Add margins to both left and right sides */
+            height: 20vh;
+            margin: 310px; /* Add margins to both left and right sides */
         }
         .quiz-container {
             text-align: center;
@@ -48,20 +48,13 @@
 		/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
         @media (max-width: 768px) {
             html {
-                font-size: 20px; /* Increase font size for smaller screens (e.g., mobile phones) */
+                font-size: 24px; /* Reduce font size for smaller screens */
             }
-            .quiz-container {
-                margin: 0 10px; /* Adjust margins for smaller screens */
-            }
-            label, input, textarea, checkbox {
-                font-size: 24px; /* Increase font size for form elements on mobile devices */
-            }
-            p {
-                font-size: 28px; /* Increase font size for paragraphs on mobile devices */
+			.container {
+                margin: 0 20px; /* Adjust margins for smaller screens */
             }
             button {
-                font-size: 26px; /* Increase font size for the button on mobile devices */
-                margin-top: 30px; /* Adjust button margin for mobile devices */
+                margin-left: 0; /* Remove left margin for mobile devices */
             }
         }
     </style>
@@ -84,3 +77,4 @@
     </script>
 </body>
 </html>
+
