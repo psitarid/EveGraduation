@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Quiz Page</title>
+    <title>Page 2</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         /* Set the background color of the entire page to light pink */
@@ -17,7 +17,7 @@
             height: 75vh;
             margin: 0; /* Add margins to both left and right sides */
         }
-        .quiz-container {
+        container {
             text-align: center;
             margin: 0 20px; /* Add margins to both left and right sides for mobile */
         }
@@ -42,6 +42,19 @@
             border-radius: 5px; /* Add rounded corners */
             cursor: pointer;
         }
+		
+		/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px; /* Reduce font size for smaller screens */
+            }
+			.container {
+                margin: 0 20px; /* Adjust margins for smaller screens */
+            }
+            button {
+                margin-left: 0; /* Remove left margin for mobile devices */
+            }
+        }
     </style>
 </head>
 <body>
@@ -62,3 +75,4 @@
     </script>
 </body>
 </html>
+
