@@ -1,80 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Verification</title>
     <style>
         /* Set the background color of the entire page to light pink */
         html {
             background-color: #F5F5F5; /* Light pink color code */
             font-size: 18px; /* Increase the base font size */
         }
+
+        /* Center the container horizontally and vertically */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 20vh;
-            margin: 310px; /* Add margins to both left and right sides */
+            height: 100vh;
+            margin: 0;
         }
-        .quiz-container {
+
+        /* Center-align text within the container */
+        .container {
             text-align: center;
-            margin: 0 20px; /* Add margins to both left and right sides for mobile */
-	    background-color: #E0D2E5;
-	
         }
-		
-		/* Increase font size for form elements */
-        label, input, textarea, checkbox {
-            font-size: 20px; /* Adjust the font size as needed */
-            margin-bottom: 10px; /* Add some spacing between elements */
+
+        /* Additional styles for your form elements */
+        form {
+            padding: 30px; /* Increase padding for form */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
         }
-		
+
+        /* Increase font size for headers and paragraphs */
+        h1 {
+            font-size: 28px; /* Adjust the font size for h1 */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
         p {
             font-size: 24px; /* Adjust the font size for paragraphs */
             margin-bottom: 15px; /* Add some spacing between elements */
         }
-        button {
-            font-size: 22px; /* Increase the font size for the button */
-            margin-top: 20px; /* Move the button down */
-            background-color: #A884B6; /* Set the background color to #A884B6 */
-            color: white; /* Set the text color to white */
-            border: none; /* Remove border */
-            padding: 12px 24px; /* Add padding */
-            border-radius: 5px; /* Add rounded corners */
-            cursor: pointer;
+
+        /* Increase font size for form elements */
+        label, input, textarea, checkbox {
+            font-size: 20px; /* Adjust the font size as needed */
+            margin-bottom: 10px; /* Add some spacing between elements */
         }
-		
-		/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+
+        /* Style the submit button with the desired color */
+        input[type="submit"] {
+            background-color: #A884B6; /* Set the background color to #A884B6 */
+            color: white;
+            border: none;
+            padding: 12px 24px; /* Increase padding for the button */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px; /* Increase font size for the button text */
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
         @media (max-width: 768px) {
             html {
-                font-size: 24px; /* Reduce font size for smaller screens */
+                font-size: 16px; /* Reduce font size for smaller screens */
             }
-			.container {
+            .container {
                 margin: 0 20px; /* Adjust margins for smaller screens */
             }
-            button {
-                margin-left: 0; /* Remove left margin for mobile devices */
-            }
+            /* Add any other style adjustments for mobile devices here */
         }
     </style>
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Συγχαρητήρια Μωρό μου!!!❤️<br></br></h1>
-        <p>Τώρα που έχεις πετύχει έναν μεγάλο σου στόχο έχω και 
+    <div class="container">
+        <h1 style="font-size: 36px;">Συγχαρητήρια Μωρό μου!!!❤️</h1>
+        <p>Τώρα που έχεις πετύχει έναν μεγάλο σου στόχο, έχω και 
             γω με την σειρά μου δυο λογάκια που θέλω να σου πω, όπως τα νιώθω.
             Είναι πιο δύσκολο να σου τα πω προφορικά γιατί κοιτάω 
-            τα ματάκια σου και τα χάνω. Έτσι, αποφάσισα να σου τα γράψω.<br>
-			<br></br>
-        <button onclick="redirectToNextPage()">Συνέχεια</button>
+            τα ματάκια σου και τα χάνω. Έτσι, αποφάσισα να σου τα γράψω.</p>
+        
+        <form action="3.html" method="get">
+            <input type="submit" value="Συνέχεια">
+        </form>
     </div>
-
-    <script>
-        function redirectToNextPage() {
-            window.location.href = "3.html";
-        }
-    </script>
 </body>
 </html>
-
