@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Verification</title>
+    <style>
+        /* Set the background color of the entire page to light pink */
+        html {
+            background-color: #F5F5F5; /* Light pink color code */
+            font-size: 18px; /* Increase the base font size */
+        }
 
+        /* Center the container horizontally and vertically */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Center-align text within the container */
+        .container {
+            text-align: center;
+        }
+
+        /* Additional styles for your form elements */
+        form {
+            background-color: #E0D2E5;
+            padding: 30px; /* Increase padding for form */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Increase font size for headers and paragraphs */
+        h1 {
+            font-size: 28px; /* Adjust the font size for h1 */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
+        p {
+            font-size: 24px; /* Adjust the font size for paragraphs */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
+        /* Increase font size for form elements */
+        label, input, textarea, checkbox {
+            font-size: 20px; /* Adjust the font size as needed */
+            margin-bottom: 10px; /* Add some spacing between elements */
+        }
+
+        /* Style the submit button with the desired color */
+        input[type="submit"] {
+            background-color: #A884B6; /* Set the background color to #A884B6 */
+            color: white;
+            border: none;
+            padding: 12px 24px; /* Increase padding for the button */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px; /* Increase font size for the button text */
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px; /* Reduce font size for smaller screens */
+            }
+            .container {
+                margin: 0 20px; /* Adjust margins for smaller screens */
+            }
+            /* Add any other style adjustments for mobile devices here */
+        }
+    </style>
+    <script>
+        function validatePassword() {
+            var passwordInput = document.getElementById("password");
+            var password = passwordInput.value;
+            
+            // Replace "your_password_here" with the actual correct password
+            var correctPassword = "2";
+
+            if (password === correctPassword) {
+                // Password is correct, redirect to 2.html
+                window.location.href = "2.html";
+                return false; // Prevent form submission
+            } else {
+                // Password is incorrect, show an alert and prevent form submission
+                alert("Λάθος κωδικός. Παρακαλώ προσπαθήστε ξανά.");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 36px;">Συγχαρητήρια Μωρό μου!!!❤️</h1>
+        <p>Τώρα που έχεις πετύχει έναν μεγάλο σου στόχο έχω και 
+            γω με την σειρά μου δυο λογάκια που θέλω να σου πω, όπως τα νιώθω.
+            Είναι πιο δύσκολο να σου τα πω προφορικά γιατί κοιτάω 
+            τα ματάκια σου και τα χάνω. Έτσι, αποφάσισα να σου τα γράψω.</p>
+        <p>Καταχώρησε την σωστή ημερομηνία με την μορφή<br> ΗΗ/ΜΜ/ΧΧΧΧ:</p>
+        <form action="#" method="post" onsubmit="return validatePassword()">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            
+            <input type="checkbox" id="myCheckbox" name="myCheckbox" value="yes" required>
+            <label for="myCheckbox">Αποδέχομαι τους όρους χρήσης και αναγνωρίζω πως ο τίτλος "Ψάρι Κλόουν" μου ανήκει δικαιωματικά.</label>
+            <br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
