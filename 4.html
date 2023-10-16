@@ -9,7 +9,6 @@
         html {
             background-color: #F5F5F5; /* Light pink color code */
             font-size: 18px; /* Increase the base font size */
-            font-family: "Comic Sans MS", cursive; /* Specify Comic Sans MS font */
         }
 
         /* Center the container horizontally and vertically */
@@ -19,7 +18,20 @@
             align-items: center;
             height: 100vh;
             margin: 0px 315px;
+        }/* Center the container horizontally and vertically */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0px 315px;
         }
+		
+		@media (max-width: 768px) {
+			body {
+				margin: 0; /* Reset margin to 0 for smaller screens */
+			}
+		}
 
         /* Center-align text within the container */
         .container {
@@ -42,7 +54,7 @@
         p {
             font-size: 24px; /* Adjust the font size for paragraphs */
             margin-bottom: 15px; /* Add some spacing between elements */
-            text-align: justify; /* Justify the text within paragraphs */
+			text-align: justify; /* Justify the text within paragraphs */
         }
 
         /* Increase font size for form elements */
