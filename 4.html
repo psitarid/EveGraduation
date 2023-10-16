@@ -10,15 +10,28 @@
             background-color: #F5F5F5; /* Light pink color code */
             font-size: 18px; /* Increase the base font size */
         }
-        
+
         /* Center the container horizontally and vertically */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0 315;
+            margin: 0px 315px;
+        }/* Center the container horizontally and vertically */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0px 315px;
         }
+		
+		@media (max-width: 768px) {
+			body {
+				margin: 0; /* Reset margin to 0 for smaller screens */
+			}
+		}
 
         /* Center-align text within the container */
         .container {
@@ -41,6 +54,7 @@
         p {
             font-size: 24px; /* Adjust the font size for paragraphs */
             margin-bottom: 15px; /* Add some spacing between elements */
+			text-align: justify; /* Justify the text within paragraphs */
         }
 
         /* Increase font size for form elements */
@@ -66,7 +80,7 @@
                 font-size: 16px; /* Reduce font size for smaller screens */
             }
             .container {
-                margin: 0 20; /* Adjust margins for smaller screens */
+                margin: 0px 20px; /* Adjust margins for smaller screens */
             }
             /* Add any other style adjustments for mobile devices here */
         }
@@ -74,16 +88,16 @@
 </head>
 <body>
     <div class="container">
-        <h1 style="font-size: 36px;"></h1>
-        <p>Συμβουλή 1η:<br>
-           Στη ζωή παίρνουμε πάντα αυτό που χρειαζόμαστε και όχι αυτό που θέλουμε. Οπότε μένει απλά 
+        <h1 style="font-size: 36px;">Συμβουλή 1η</h1>
+        <p>Στη ζωή παίρνουμε πάντα αυτό που χρειαζόμαστε και όχι αυτό που θέλουμε. Οπότε μένει απλά 
            να επιμείνουμε και να βρίσκουμε τι λείπει μέχρι να συγκεντρώσουμε αυτά που χρειαζόμαστε 
            και να φτάσουμε σε αυτό που θέλουμε. Δεν μπορούμε να τα ξέρουμε όλα από την αρχή.
            Έτσι, βλέπουμε ότι όλα γίνονται για καλό γιατί όποιο και να είναι το αποτέλεσμα γίνεται 
            χρήσιμη πληροφορία για μελλοντική χρήση και τίποτα δεν είναι αδύνατο. Μπορεί απλά να 
            χρειάζεται πιο πολλά βήματα. Στο κάτω κάτω κανείς δεν είπε ότι πρέπει ντε και καλά να 
            φτάσουμε στον στόχο μας με την πρώτη προσπάθεια. Ούτε και μεις πρέπει να έχουμε αυτή την 
-           απαίτηση από τον εαυτό μας. Όλα είναι ένα μάθημα.        
+           απαίτηση από τον εαυτό μας. Όλα είναι ένα μάθημα.</p>
+        
         <form action="4.html" method="get">
             <input type="submit" value="Συνέχεια">
         </form>
