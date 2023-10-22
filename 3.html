@@ -17,8 +17,10 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0px 315px;
-        }
+			outline: 5px solid #A884B6; /* Add the outline */
+            margin: 10px; /* Add margin from all sides */
+			border-radius: 15px; /* Add rounded corners */
+		}
         @media (max-width: 768px) {
             body {
                 margin: 0; /* Reset margin to 0 for smaller screens */
@@ -28,6 +30,9 @@
         /* Center-align text within the container */
         .container {
             text-align: center;
+			margin: 20px; /* Add margin to the top and bottom for mobile view */
+			position: relative;
+			top: 6px;
         }
 
         /* Additional styles for your form elements */
@@ -45,8 +50,9 @@
 
         p {
             font-size: 24px; /* Adjust the font size for paragraphs */
-            margin-bottom: 15px; /* Add some spacing between elements */
             text-align: justify; /* Justify the text within paragraphs */
+			margin: 50px 315px;
+			
         }
 
         /* Increase font size for form elements */
@@ -72,6 +78,11 @@
                 font-size: 16px; /* Reduce font size for smaller screens */
 				background-color: #F5F5F5; /* Light pink color code */
             }
+			body{
+				outline: 5px solid #A884B6; /* Add the outline */
+				margin: 10px; /* Add margin from all sides */
+				border-radius: 15px; /* Add rounded corners */
+			}
             .container {
                 margin: 0px 20px; /* Adjust margins for smaller screens */
             }
