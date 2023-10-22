@@ -18,16 +18,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0px 315px;
-			outline: 5px solid #A884B6; /* Add the outline */
-            margin: 10px; /* Add margin from all sides */
-			border-radius: 15px; /* Add rounded corners */
         }
-        @media (max-width: 768px) {
-        body {
-            margin: 0; /* Reset margin to 0 for smaller screens */
-        }
-}
+
 
         /* Center-align text within the container */
         .container {
@@ -53,6 +45,15 @@
             text-align: justify; /* Justify the text within paragraphs */
 			margin: 0px 315px;
         }
+		
+		@media (max-width: 768px) {
+			body {
+			margin: 0; /* Reset margin to 0 for smaller screens */
+			}
+			p{
+				margin: 0;
+			}
+		}
 
         /* Increase font size for form elements */
         label, input, textarea, checkbox {
