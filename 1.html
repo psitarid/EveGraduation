@@ -18,6 +18,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+			outline: 5px solid #A884B6; /* Add the outline */
+            margin: 10px; /* Add margin from all sides */
+			border-radius: 15px; /* Add rounded corners */
         }
 
         /* Center-align text within the container */
@@ -65,8 +68,14 @@
         @media (max-width: 768px) {
             html {
                 font-size: 16px; /* Reduce font size for smaller screens */
-				background-color: #F5F5F5; /* Light pink color code */
+                background-color: #F5F5F5; /* Light pink color code */
             }
+			body{
+				outline: 5px solid #A884B6; /* Add the outline */
+				margin: 10px; /* Add margin from all sides */
+				border-radius: 15px; /* Add rounded corners */
+
+			}
             .container {
                 margin: 0 20px; /* Adjust margins for smaller screens */
             }
@@ -76,9 +85,9 @@
             p{
                 font-size: 20px;
             }
-			label{
-				font-size: 18px;
-			}
+            label{
+                font-size: 18px;
+            }
             /* Add any other style adjustments for mobile devices here */
         }
     </style>
