@@ -11,21 +11,33 @@
             font-size: 18px; /* Increase the base font size */
         }
 
-        /* Center the container horizontally and vertically */
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-			outline: 5px solid #A884B6; /* Add the outline */
-            margin: 10px; /* Add margin from all sides */
+            position: absolute; /* Add relative positioning to the body */
+            margin: 0px; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
+        }
+
+        body:before {
+            content: '';
+            position: absolute;
+            top: 10px; /* Adjust as needed for top margin */
+            right: 10px; /* Adjust as needed for right margin */
+            bottom: 10px; /* Adjust as needed for bottom margin */
+            left: 10px; /* Adjust as needed for left margin */
+            border: 5px solid #A884B6; /* Your outline */
 			border-radius: 15px; /* Add rounded corners */
+			pointer-events: none; /* Ignore pointer events */
         }
 
         /* Center-align text within the container */
         .container {
             text-align: center;
+			margin: 0px 315px;
         }
 
         /* Additional styles for your form elements */
@@ -34,6 +46,7 @@
             padding: 30px; /* Increase padding for form */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 20px;
         }
 
         /* Increase font size for headers and paragraphs */
@@ -69,12 +82,29 @@
             html {
                 font-size: 16px; /* Reduce font size for smaller screens */
                 background-color: #F5F5F5; /* Light pink color code */
-            }
-			body{
-				outline: 5px solid #A884B6; /* Add the outline */
-				margin: 10px; /* Add margin from all sides */
-				border-radius: 15px; /* Add rounded corners */
+				height: auto;
+			}
+			body {
+            position: absolute; /* Add relative positioning to the body */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
+			}
 
+			body:before {
+				content: '';
+				position: absolute;
+				top: 10px; /* Adjust as needed for top margin */
+				right: 10px; /* Adjust as needed for right margin */
+				bottom: 10px; /* Adjust as needed for bottom margin */
+				left: 10px; /* Adjust as needed for left margin */
+				border: 5px solid #A884B6; /* Your outline */
+				border-radius: 15px; /* Add rounded corners */
+				pointer-events: none; /* Ignore pointer events */
 			}
             .container {
                 margin: 0 20px; /* Adjust margins for smaller screens */
@@ -84,6 +114,7 @@
             }
             p{
                 font-size: 20px;
+				margin: 20px;
             }
             label{
                 font-size: 18px;
