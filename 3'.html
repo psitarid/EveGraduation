@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Verification</title>
+    <style>
+        /* Set the background color of the entire page to light pink */
+        html {
+            background-color: #F5F5F5; /* Light pink color code */
+            font-size: 18px; /* Increase the base font size */
+        }
+        
+        /* Center the container horizontally and vertically */
+        body {
+            position: absolute; /* Add relative positioning to the body */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
+        }
+
+        body:before {
+            content: '';
+            position: absolute;
+            top: 10px; /* Adjust as needed for top margin */
+            right: 10px; /* Adjust as needed for right margin */
+            bottom: 10px; /* Adjust as needed for bottom margin */
+            left: 10px; /* Adjust as needed for left margin */
+            border: 5px solid #A884B6; /* Your outline */
+			border-radius: 15px; /* Add rounded corners */
+			pointer-events: none; /* Ignore pointer events */
+        }
+
+        /* Center-align text within the container */
+        .container {
+            text-align: center;
+			margin: 20px; /* Add margin to the top and bottom for mobile view */
+			position: relative;
+			top: 6px;
+        }
+
+        /* Additional styles for your form elements */
+        form {
+            padding: 30px; /* Increase padding for form */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+        }
+
+        /* Increase font size for headers and paragraphs */
+        h1 {
+            font-size: 28px; /* Adjust the font size for h1 */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
+        p {
+            font-size: 24px; /* Adjust the font size for paragraphs */
+            text-align: justify; /* Justify the text within paragraphs */
+			margin: 0px 315px;
+			
+        }
+		
+		@media (max-width: 768px) {
+			body {
+			margin: 0; /* Reset margin to 0 for smaller screens */
+			}
+			p{
+				margin: 0;
+			}
+		}
+
+        /* Increase font size for form elements */
+        label, input, textarea, checkbox {
+            font-size: 20px; /* Adjust the font size as needed */
+            margin-bottom: 10px; /* Add some spacing between elements */
+        }
+
+        /* Style the submit button with the desired color */
+        input[type="submit"] {
+            background-color: #A884B6; /* Set the background color to #A884B6 */
+            color: white;
+            border: none;
+            padding: 12px 24px; /* Increase padding for the button */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px; /* Increase font size for the button text */
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px; /* Reduce font size for smaller screens */
+				background-color: #F5F5F5; /* Light pink color code */
+            }
+			body {
+            position: absolute; /* Add relative positioning to the body */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
+			}
+
+			body:before {
+				content: '';
+				position: absolute;
+				top: 10px; /* Adjust as needed for top margin */
+				right: 10px; /* Adjust as needed for right margin */
+				bottom: 10px; /* Adjust as needed for bottom margin */
+				left: 10px; /* Adjust as needed for left margin */
+				border: 5px solid #A884B6; /* Your outline */
+				border-radius: 15px; /* Add rounded corners */
+				pointer-events: none; /* Ignore pointer events */
+			}
+            .container {
+                margin: 0px 20px; /* Adjust margins for smaller screens */
+            }
+			h1{
+				font-size: 30px;
+			}
+			p{
+                font-size: 20px;
+				margin: 20px;
+            }
+            /* Add any other style adjustments for mobile devices here */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+        <p>Θέλω να ξέρεις ότι είμαι πολύ υπερήφανος για σένα.
+           Δεν ήμουν αρκετά τυχερός να βρίσκομαι δίπλα σου νωρίτερα, όμως ακόμα και αυτό το
+           μικρό κομματάκι στο τέλος των σπουδών σου ήταν αρκετό για να καταλάβω πολλά.
+           Μου έδειξε πόσο αποφασισμένη είσαι να πετύχεις τον στόχο σου,  
+           πόσο θέλεις να κάνεις τους δικούς σου ανθρώπους υπερήφανους, πόσο θέλεις
+           να πατήσεις γρήγορα στα πόδια σου για να μην τους ανησυχείς. Και αυτή είναι
+           μια πολύ καλή συνταγή για να πετύχεις πάρα πολλά. Όταν το κίνητρο και 
+           η ανατροφοδότηση σου πηγάζουν από τους αγαπημένους σου υπάρχουν πολύ λίγα 
+           πράγματα που δεν μπορείς να κάνεις.</p>
+        
+        <form action="4.html" method="get">
+            <input type="submit" value="Συνέχεια">
+        </form>
+    </div>
+</body>
+</html>
