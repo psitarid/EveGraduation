@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Verification</title>
+    <style>
+        /* Set the background color of the entire page to light pink */
+        html {
+            background-color: #F5F5F5; /* Light pink color code */
+            font-size: 18px; /* Increase the base font size */
+        }
+
+        body {
+            position: absolute; /* Add relative positioning to the body */
+            margin: 0px; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
+        }
+
+        body:before {
+            content: '';
+            position: absolute;
+            top: 10px; /* Adjust as needed for top margin */
+            right: 10px; /* Adjust as needed for right margin */
+            bottom: 10px; /* Adjust as needed for bottom margin */
+            left: 10px; /* Adjust as needed for left margin */
+            border: 5px solid #A884B6; /* Your outline */
+			border-radius: 15px; /* Add rounded corners */
+			pointer-events: none; /* Ignore pointer events */
+        }
+
+        /* Center-align text within the container */
+        .container {
+            text-align: center;
+			margin: 0px 315px;
+        }
+
+        /* Additional styles for your form elements */
+        form {
+            background-color: #E0D2E5;
+            padding: 30px; /* Increase padding for form */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 20px;
+        }
+
+        /* Increase font size for headers and paragraphs */
+        h1 {
+            font-size: 36px; /* Adjust the font size for h1 */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
+        p {
+            font-size: 24px; /* Adjust the font size for paragraphs */
+            margin-bottom: 15px; /* Add some spacing between elements */
+        }
+
+        /* Increase font size for form elements */
+        label, input, textarea, checkbox {
+            font-size: 20px; /* Adjust the font size as needed */
+            margin-bottom: 10px; /* Add some spacing between elements */
+        }
+
+        /* Style the submit button with the desired color */
+        input[type="submit"] {
+            background-color: #A884B6; /* Set the background color to #A884B6 */
+            color: white;
+            border: none;
+            padding: 12px 24px; /* Increase padding for the button */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 22px; /* Increase font size for the button text */
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px; /* Reduce font size for smaller screens */
+                background-color: #F5F5F5; /* Light pink color code */
+				height: auto;
+			}
+			body {
+            position: absolute; /* Add relative positioning to the body */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
+			}
+
+			body:before {
+				content: '';
+				position: absolute;
+				top: 10px; /* Adjust as needed for top margin */
+				right: 10px; /* Adjust as needed for right margin */
+				bottom: 10px; /* Adjust as needed for bottom margin */
+				left: 10px; /* Adjust as needed for left margin */
+				border: 5px solid #A884B6; /* Your outline */
+				border-radius: 15px; /* Add rounded corners */
+				pointer-events: none; /* Ignore pointer events */
+			}
+            .container {
+                margin: 0 20px; /* Adjust margins for smaller screens */
+            }
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 20px;
+				margin: 20px;
+            }
+            label{
+                font-size: 18px;
+            }
+            /* Add any other style adjustments for mobile devices here */
+        }
+    </style>
+    <script>
+        function validatePassword() {
+            var passwordInput = document.getElementById("password");
+            var password = passwordInput.value;
+            
+            // Replace "your_password_here" with the actual correct password
+            var correctPassword = "2";
+
+            if (password === correctPassword) {
+                // Password is correct, redirect to 2.html
+                window.location.href = "2.html";
+                return false; // Prevent form submission
+            } else {
+                // Password is incorrect, show an alert and prevent form submission
+                alert("Λάθος κωδικός. Παρακαλώ προσπαθήστε ξανά.");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Καλώς όρισες!!!</h1>
+        <p>Για να αποκτήσεις πρόσβαση στο επόμενο βήμα πρέπει να βρείς πρώτα τον σωστό κωδικό.</p>
+        <p>Καταχώρησε την σωστή ημερομηνία με την μορφή ΗΗ/ΜΜ/ΧΧΧΧ:</p>
+        <form action="#" method="post" onsubmit="return validatePassword()">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            
+            <input type="checkbox" id="myCheckbox" name="myCheckbox" value="yes" required>
+            <label for="myCheckbox">Αποδέχομαι τους όρους χρήσης και αναγνωρίζω πως ο τίτλος<br>"Ψάρι Κλόουν" μου ανήκει δικαιωματικά.</label>
+            <br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
