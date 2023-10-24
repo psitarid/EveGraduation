@@ -17,9 +17,9 @@
             height: 100vh; /* Full viewport height */
             width: 100vw; /* Full viewport width */
             box-sizing: border-box; /* Include padding and border in element's total width and height */
-	    display: flex; /* Enable Flexbox */
-	    flex-direction: column; /* Stack child elements vertically */
-	    justify-content: center; /* Center child elements vertically */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
         }
 
         body:before {
@@ -30,8 +30,8 @@
             bottom: 10px; /* Adjust as needed for bottom margin */
             left: 10px; /* Adjust as needed for left margin */
             border: 5px solid #A884B6; /* Your outline */
-	    border-radius: 15px; /* Add rounded corners */
-	    pointer-events: none; /* Ignore pointer events */
+			border-radius: 15px; /* Add rounded corners */
+			pointer-events: none; /* Ignore pointer events */
         }
 
         /* Center-align text within the container */
@@ -84,29 +84,29 @@
                 background-color: #F5F5F5; /* Light pink color code */
 				height: auto;
 			}
-	    body {
-	        position: absolute; /* Add relative positioning to the body */
-	        margin: 0; /* Remove default margin */
-	        height: 100vh; /* Full viewport height */
-	        width: 100vw; /* Full viewport width */
-	        box-sizing: border-box; /* Include padding and border in element's total width and height */
-	        display: flex; /* Enable Flexbox */
-	        flex-direction: column; /* Stack child elements vertically */
-	        justify-content: center; /* Center child elements vertically */
-	    }
+			body {
+            position: absolute; /* Add relative positioning to the body */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            width: 100vw; /* Full viewport width */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+			display: flex; /* Enable Flexbox */
+			flex-direction: column; /* Stack child elements vertically */
+			justify-content: center; /* Center child elements vertically */
+			}
 
-	    body:before {
-		content: '';
-		position: absolute;
-		top: 10px; /* Adjust as needed for top margin */
-		right: 10px; /* Adjust as needed for right margin */
-		bottom: 65px; /* Adjust as needed for bottom margin */
-		left: 10px; /* Adjust as needed for left margin */
-		border: 5px solid #A884B6; /* Your outline */
-		border-radius: 15px; /* Add rounded corners */
-		pointer-events: none; /* Ignore pointer events */
-	    }
-.container {
+			body:before {
+				content: '';
+				position: absolute;	
+				top: 10px; /* Adjust as needed for top margin */
+				right: 10px; /* Adjust as needed for right margin */
+				bottom: 10px; /* Adjust as needed for bottom margin */
+				left: 10px; /* Adjust as needed for left margin */
+				border: 5px solid #A884B6; /* Your outline */
+				border-radius: 15px; /* Add rounded corners */
+				pointer-events: none; /* Ignore pointer events */
+			}
+            .container {
                 margin: 0 20px; /* Adjust margins for smaller screens */
             }
             h1{
@@ -132,7 +132,7 @@
 
             if (password === correctPassword) {
                 // Password is correct, redirect to 2.html
-                window.location.href = "2'.html";
+                window.location.href = "2.html";
                 return false; // Prevent form submission
             } else {
                 // Password is incorrect, show an alert and prevent form submission
