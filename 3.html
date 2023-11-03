@@ -24,43 +24,44 @@
         }
 
         body:before {
-            content: '';
-            position: absolute;
-            top: 10px; /* Adjust as needed for top margin */
-            right: 10px; /* Adjust as needed for right margin */
-            bottom: 10px; /* Adjust as needed for bottom margin */
-            left: 10px; /* Adjust as needed for left margin */
-            border: 5px solid #A884B6; /* Your outline */
-			border-radius: 15px; /* Add rounded corners */
+			content: '';
+			position: absolute;
+			top: 1vh; /* Adjust as needed for top margin */
+			right: 1vh; /* Adjust as needed for right margin */
+			bottom: 1vh; /* Adjust as needed for bottom margin */
+			left: 1vh; /* Adjust as needed for left margin */
+			border: 0.75vh solid #A884B6; /* Your outline */
+			border-radius: 1.4vh; /* Add rounded corners */
 			pointer-events: none; /* Ignore pointer events */
-        }
+		}
 
         /* Center-align text within the container */
         .container {
             text-align: center;
-			margin: 20px; /* Add margin to the top and bottom for mobile view */
-			position: relative;
-			top: 6px;
         }
 
         /* Additional styles for your form elements */
         form {
-            padding: 30px; /* Increase padding for form */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            padding: 4vh; /* Increase padding for form */
+            border-radius: 1.3vh;
+            box-shadow: 0 0 1.3vh rgba(0, 0, 0, 0);
+			margin-bottom: 2vh;
         }
 
         /* Increase font size for headers and paragraphs */
         h1 {
-            font-size: 28px; /* Adjust the font size for h1 */
-            margin-bottom: 15px; /* Add some spacing between elements */
+            font-size: 5vh; /* Adjust the font size for h1 */
+            margin-bottom: 13vh; /* Add some spacing between elements */
+			font-family: "Calibri", sans-serif;
         }
 
         p {
-            font-size: 24px; /* Adjust the font size for paragraphs */
+            font-size: 3.3vh; /* Adjust the font size for paragraphs */
+            margin-bottom: 2vh; /* Add some spacing between elements */
             text-align: justify; /* Justify the text within paragraphs */
-			margin: 0px 315px;
-			
+			margin: 0vh 21vw;
+			font-family: "Calibri", sans-serif;
+			margin-top: -5vh;
         }
 		
 		@media (max-width: 768px) {
@@ -74,8 +75,8 @@
 
         /* Increase font size for form elements */
         label, input, textarea, checkbox {
-            font-size: 20px; /* Adjust the font size as needed */
-            margin-bottom: 10px; /* Add some spacing between elements */
+            font-size: 2.5vh; /* Adjust the font size as needed */
+            margin-bottom: 1vh; /* Add some spacing between elements */
         }
 
         /* Style the submit button with the desired color */
@@ -83,10 +84,12 @@
             background-color: #A884B6; /* Set the background color to #A884B6 */
             color: white;
             border: none;
-            padding: 12px 24px; /* Increase padding for the button */
-            border-radius: 5px;
+            padding: 1.5vh 3.2vh; /* Increase padding for the button */
+            border-radius: 0.8vh;
             cursor: pointer;
-            font-size: 22px; /* Increase font size for the button text */
+            font-size: 3vh; /* Increase font size for the button text */
+			font-family: "Calibri", sans-serif;
+			margin-top: 5vh
         }
 
         /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
@@ -104,29 +107,35 @@
 			display: flex; /* Enable Flexbox */
 			flex-direction: column; /* Stack child elements vertically */
 			justify-content: center; /* Center child elements vertically */
-			}
+        }
 
 			body:before {
-				content: '';
-				position: absolute;
-				top: 10px; /* Adjust as needed for top margin */
-				right: 10px; /* Adjust as needed for right margin */
-				bottom: 10px; /* Adjust as needed for bottom margin */
-				left: 10px; /* Adjust as needed for left margin */
-				border: 5px solid #A884B6; /* Your outline */
-				border-radius: 15px; /* Add rounded corners */
-				pointer-events: none; /* Ignore pointer events */
-			}
+            content: '';
+            position: absolute;
+            top: 2vw; /* Adjust as needed for top margin */
+            right: 2vw;; /* Adjust as needed for right margin */
+            bottom: 2vw;; /* Adjust as needed for bottom margin */
+            left: 2vw;; /* Adjust as needed for left margin */
+            border: 1.5vw solid #A884B6; /* Your outline */
+			border-radius: 4.5vw; /* Add rounded corners */
+			pointer-events: none; /* Ignore pointer events */
+        }
             .container {
-                margin: 0px 20px; /* Adjust margins for smaller screens */
+                margin: 0vw 4vw; /* Adjust margins for smaller screens */
             }
 			h1{
-				font-size: 30px;
-			}
-			p{
-                font-size: 20px;
-				margin: 20px;
+                font-size: 8vw
             }
+            p{
+                font-size: 5.33vw;
+				margin: 5.33vw;
+				margin-bottom: 0vw;
+				margin-top: -27vw;
+				
+            }
+			input[type="sub	mit"] {
+				font-size: 6vw;
+			}
             /* Add any other style adjustments for mobile devices here */
         }
     </style>
