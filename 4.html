@@ -8,7 +8,7 @@
         /* Set the background color of the entire page to light pink */
         html {
             background-color: #F5F5F5; /* Light pink color code */
-            font-size: 18px; /* Increase the base font size */
+            /*font-size: 18px; /* Increase the base font size */
         }
 
         body {
@@ -25,12 +25,12 @@
 		body:before {
 			content: '';
 			position: absolute;
-			top: 10px; /* Adjust as needed for top margin */
-			right: 10px; /* Adjust as needed for right margin */
-			bottom: 10px; /* Adjust as needed for bottom margin */
-			left: 10px; /* Adjust as needed for left margin */
-			border: 5px solid #A884B6; /* Your outline */
-			border-radius: 15px; /* Add rounded corners */
+			top: 1vh; /* Adjust as needed for top margin */
+			right: 1vh; /* Adjust as needed for right margin */
+			bottom: 1vh; /* Adjust as needed for bottom margin */
+			left: 1vh; /* Adjust as needed for left margin */
+			border: 0.75vh solid #A884B6; /* Your outline */
+			border-radius: 1.4vh; /* Add rounded corners */
 			pointer-events: none; /* Ignore pointer events */
 		}
 
@@ -42,15 +42,18 @@
 
         /* Increase font size for headers and paragraphs */
         h1 {
-            font-size: 36px; /* Adjust the font size for h1 */
-            margin-bottom: 15px; /* Add some spacing between elements */
+            font-size: 3.3vh; /* Adjust the font size for h1 ---prin 36px*/
+            margin-bottom: 1.4vh; /* Add some spacing between elements---prin 15px */
+			font-family: "Calibri", sans-serif;
         }
 
         p {
-            font-size: 24px; /* Adjust the font size for paragraphs */
-            margin-bottom: 15px; /* Add some spacing between elements */
+            font-size: 3.3vh; /* Adjust the font size for paragraphs ---prin 24px*/
+            margin-bottom: 1.4vh; /* Add some spacing between elements */
 			text-align: justify; /* Justify the text within paragraphs */
-			margin: 0px 315px;
+			margin: 0vh 20vw;
+			font-family: "Calibri", sans-serif;
+			line-height: 1.05; /* Adjust the line height as needed */
         }
 				
 		@media (max-width: 768px) {
@@ -64,9 +67,9 @@
 		}
 
         /* Increase font size for form elements */
-        label, input, textarea, checkbox {
-            font-size: 20px; /* Adjust the font size as needed */
-            margin-bottom: 10px; /* Add some spacing between elements */
+			label, input, textarea, checkbox {
+            font-size: 3.1vh; /* Adjust the font size as needed */
+            margin-bottom: 1vh; /* Add some spacing between elements */
         }
 
         /* Style the submit button with the desired color */
@@ -75,16 +78,17 @@
             text-align: center;
 			color: white;
             border: none;
-            padding: 12px 24px; /* Increase padding for the button */
-            border-radius: 5px;
+            padding: 1.3vh 3.3vh; /* Increase padding for the button */
+            border-radius: 0.75vh;
             cursor: pointer;
-            font-size: 22px; /* Increase font size for the button text */
+            font-size: 3.3vh; /* Increase font size for the button text */
+			font-family: "Calibri", sans-serif;
         }
 		
 		@media (min-width: 769px) {
             /* Apply margin to the form for screens wider than 768px (desktop view) */
             input[type="submit"] {
-                margin-top : 30px;
+                margin-top : 2.8vh;
             }
         }
 		
@@ -95,7 +99,6 @@
 			background-color: #F5F5F5; /* Light pink color code */
 	    }
 	    body {
-            margin-top: 10px; /* Remove default margin */
             height: 100hw; /* Full viewport height */
             width: 100vw; /* Full viewport width */
             box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -105,24 +108,28 @@
 			}
 
 		body:before {
-			content: '';
-			position: absolute;
-			top: 10px; /* Adjust as needed for top margin */
-			right: 10px; /* Adjust as needed for right margin */
-			bottom: -30px; /* Adjust as needed for bottom margin */
-			left: 10px; /* Adjust as needed for left margin */
-			border: 5px solid #A884B6; /* Your outline */
-			border-radius: 15px; /* Add rounded corners */
+            content: '';
+            position: absolute;
+            top: 2vw; /* Adjust as needed for top margin */
+            right: 2vw;; /* Adjust as needed for right margin */
+            bottom: 2vw;; /* Adjust as needed for bottom margin */
+            left: 2vw;; /* Adjust as needed for left margin */
+            border: 1.5vw solid #A884B6; /* Your outline */
+			border-radius: 4.5vw; /* Add rounded corners */
 			pointer-events: none; /* Ignore pointer events */
-		}
+        }
 	    .container {
-			margin: 0px 20px; /* Add margin to the top and bottom for mobile view */
-	    }
+            margin: 0vw 4vw; /* Adjust margins for smaller screens */
+        }
 	    p {
-	    	font-size: 20px; /* Decrease font size for paragraphs on smaller screens */
-				margin: 20px;
-				margin-top: 40px
+	    	font-size: 5.33vw; /* Decrease font size for paragraphs on smaller screens */
+			margin: 5.33vw;
+			margin-top: 15vw;
 	    }
+		input[type="submit"] {
+				font-size: 6vw;
+				margin-bottom: 10vw;
+			}
 	}
 
     </style>
@@ -130,7 +137,7 @@
 <body>
     <div class="container">
         <h1></h1>
-        <p>Ζυμώνω το παρακάτω στο μυαλό μου ενθυμούμενος μια συγκεκριμένη στιγμή. Είχε μόλις βγει το αποτέλεσμα στο τελευταίο μάθημα της σχολής σου. "Είχαμε μια αποτυχία γιαγιά" λες στο τηλέφωνο για το 3 στην Παιδαγωγική και τα δάκρυα ξεκινάνε να τρέχουν. Εγώ από εκείνη τη μέρα σκέφτομαι το εξής:<br>Ξέρω, ξέρω είναι πλέον κλισέ, αλλά τι είναι πιο σημαντικό; Ο προορισμός ή το ταξίδι; Έχει σημασία απλά να φτάσεις ή να μαζέψεις γνώσεις, εμπειρίες και να χτίσεις χαρακτήρα στη διαδρομή; Εγώ λοιπόν, πιστεύω ότι στη ζωή παίρνουμε πάντα αυτό που χρειαζόμαστε και όχι αυτό που θέλουμε. Πριν συνεχίσεις θέλω σε παρακαλώ να διαβάσεις άλλη μια φορά την προηγούμενη πρόταση. Όλοι ξέρουμε πού θέλουμε να φτάσουμε αλλά δεν ξέρουμε τι χρειαζόμαστε για να φτιάξουμε το μονοπάτι μας. Απλά υποθέτουμε. Για κάθε μας στόχο μένει απλά να επιμένουμε, να βρίσκουμε τι λείπει μέχρι να είμαστε έτοιμοι. Μπορεί να μας πάρει δύο, τρεις, τέσσερις προσπάθειες. Δεν μπορούμε να τα ξέρουμε όλα από την αρχή. Στο κάτω-κάτω κανείς δεν είπε ότι πρέπει ντε και καλά να φτάσουμε στον στόχο μας με την πρώτη. Ούτε και μεις πρέπει να έχουμε αυτή την απαίτηση από τον εαυτό μας. Οφείλεις όμως  όταν φτάσεις στον προορισμό σου να μπορείς να κοιταχτείς στον καθρέφτη και να χαμογελάσεις. Να χαμογελάσεις με την ψυχή, όχι με το στόμα. Να ξέρεις εκείνη τη στιγμή πως είσαι έτοιμη. Να σκέφτεσαι το ταξίδι σου, άσε τον προορισμό. Δεν θα φύγει. Πολλές φορές βλέπουμε το δέντρο και χάνουμε το δάσος ενώ με μια "αποτυχία" μπορεί να κερδίσουμε περισσότερα από ότι με μία επιτυχία. </p>
+        <p>Ζυμώνω το παρακάτω στο μυαλό μου όσο θυμάμαι μια συγκεκριμένη στιγμή. Είχε μόλις βγει το αποτέλεσμα στο τελευταίο μάθημα της σχολής σου. "Είχαμε μια αποτυχία γιαγιά" λες στο τηλέφωνο για το 3 στην Παιδαγωγική και τα δάκρυα ξεκινάνε να τρέχουν. Εγώ από εκείνη τη μέρα σκέφτομαι το εξής:<br>Ξέρω, είναι πλέον κλισέ, αλλά τι είναι πιο σημαντικό; Ο προορισμός ή το ταξίδι; Έχει σημασία απλά να φτάσεις ή να μαζέψεις γνώσεις, εμπειρίες και να χτίσεις χαρακτήρα στη διαδρομή; Εγώ λοιπόν, πιστεύω ότι στη ζωή παίρνουμε πάντα αυτό που χρειαζόμαστε και όχι αυτό που θέλουμε. Πριν συνεχίσεις θέλω σε παρακαλώ να διαβάσεις άλλη μια φορά την προηγούμενη πρόταση. Όλοι ξέρουμε πού θέλουμε να φτάσουμε αλλά δεν ξέρουμε τι χρειαζόμαστε για να φτιάξουμε το μονοπάτι μας. Απλά υποθέτουμε. Για κάθε μας στόχο μένει απλά να επιμένουμε, να βρίσκουμε τι λείπει μέχρι να είμαστε έτοιμοι. Μπορεί να μας πάρει δύο, τρεις, τέσσερις προσπάθειες. Δεν μπορούμε να τα ξέρουμε όλα από την αρχή. Στο κάτω-κάτω κανείς δεν είπε ότι πρέπει ντε και καλά να φτάσουμε στον στόχο μας με την πρώτη. Ούτε και μεις πρέπει να έχουμε αυτή την απαίτηση από τον εαυτό μας. Οφείλεις όμως όταν φτάσεις στον προορισμό σου να μπορείς να κοιταχτείς στον καθρέφτη και να χαμογελάσεις. Να χαμογελάσεις με την ψυχή, όχι με το στόμα. Να ξέρεις εκείνη τη στιγμή πως είσαι έτοιμη. Να σκέφτεσαι το ταξίδι σου, άσε τον προορισμό. Δεν θα φύγει. Πολλές φορές βλέπουμε το δέντρο και χάνουμε το δάσος αφού με μια "αποτυχία" μπορεί να κερδίσουμε περισσότερα από ότι με μία επιτυχία. <br><br></p>
 </p>
         <form action="5.html" method="get">
             <input type="submit" value="Συνέχεια">
