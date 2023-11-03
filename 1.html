@@ -11,63 +11,46 @@
             font-size: 18px; /* Increase the base font size */
         }
 
+        /* Center the container horizontally and vertically */
         body {
-            position: absolute; /* Add relative positioning to the body */
-            margin: 0; /* Remove default margin */
-            height: 100vh; /* Full viewport height */
-            width: 100vw; /* Full viewport width */
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
-			display: flex; /* Enable Flexbox */
-			flex-direction: column; /* Stack child elements vertically */
-			justify-content: center; /* Center child elements vertically */
-        }
-
-        body:before {
-           	content: '';
-			position: absolute;
-			top: 1vh; /* Adjust as needed for top margin */
-			right: 1vh; /* Adjust as needed for right margin */
-			bottom: 1vh; /* Adjust as needed for bottom margin */
-			left: 1vh; /* Adjust as needed for left margin */
-			border: 0.75vh solid #A884B6; /* Your outline */
-			border-radius: 1.4vh; /* Add rounded corners */
-			pointer-events: none; /* Ignore pointer events */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+			outline: 5px solid #A884B6; /* Add the outline */
+            margin: 10px; /* Add margin from all sides */
+			border-radius: 15px; /* Add rounded corners */
         }
 
         /* Center-align text within the container */
         .container {
             text-align: center;
-			margin: 0vh 20vw;
         }
 
         /* Additional styles for your form elements */
         form {
             background-color: #E0D2E5;
-            padding: 3.3vh; /* Increase padding for form */
-            border-radius: 1vh;
-            box-shadow: 0 0 1vh rgba(0, 0, 0, 0.2);
-			margin: 2vh;
+            padding: 30px; /* Increase padding for form */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         /* Increase font size for headers and paragraphs */
         h1 {
-            font-size: 5vh; /* Adjust the font size for h1 */
+            font-size: 36px; /* Adjust the font size for h1 */
             margin-bottom: 15px; /* Add some spacing between elements */
-			font-family: "Calibri", sans-serif;
         }
 
-
         p {
-            font-size: 3.3vh; /* Adjust the font size for paragraphs */
-            margin-bottom: 2.5vh; /* Add some spacing between elements */
-			font-family: "Calibri", sans-serif;
+            font-size: 24px; /* Adjust the font size for paragraphs */
+            margin-bottom: 15px; /* Add some spacing between elements */
         }
 
         /* Increase font size for form elements */
         label, input, textarea, checkbox {
-            font-size: 2.8vh;/* Adjust the font size as needed */
-            margin-bottom: 1.5vh; /* Add some spacing between elements */
-			font-family: "Calibri", sans-serif;
+            font-size: 20px; /* Adjust the font size as needed */
+            margin-bottom: 10px; /* Add some spacing between elements */
         }
 
         /* Style the submit button with the desired color */
@@ -75,57 +58,36 @@
             background-color: #A884B6; /* Set the background color to #A884B6 */
             color: white;
             border: none;
-            padding: 1.5vh 3.2vh; /* Increase padding for the button */
-            border-radius: 0.8vh;
+            padding: 12px 24px; /* Increase padding for the button */
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 3vh; /* Increase font size for the button text */
+            font-size: 22px; /* Increase font size for the button text */
         }
 
         /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
         @media (max-width: 768px) {
             html {
-                /*font-size: 16px; *//* Reduce font size for smaller screens */
+                font-size: 16px; /* Reduce font size for smaller screens */
                 background-color: #F5F5F5; /* Light pink color code */
-				height: auto;
-			}
-			body {
-            position: absolute; /* Add relative positioning to the body */
-            margin: 0; /* Remove default margin */
-            height: 100vh; /* Full viewport height */
-            width: 100vw; /* Full viewport width */
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
-			display: flex; /* Enable Flexbox */
-			flex-direction: column; /* Stack child elements vertically */
-			justify-content: center; /* Center child elements vertically */
-			}
+            }
+			body{
+				outline: 5px solid #A884B6; /* Add the outline */
+				margin: 10px; /* Add margin from all sides */
+				border-radius: 15px; /* Add rounded corners */
 
-			body:before {
-				content: '';
-				position: absolute;	
-				top: 2vw; /* Adjust as needed for top margin */
-				right: 2vw; /* Adjust as needed for right margin */
-				bottom: 2vw; /* Adjust as needed for bottom margin */
-				left: 2vw; /* Adjust as needed for left margin */
-				border: 1.5vw solid #A884B6; /* Your outline */
-				border-radius: 4.5vw; /* Add rounded corners */
-				pointer-events: none; /* Ignore pointer events */
 			}
             .container {
-                margin: 0vw 4vw; /* Adjust margins for smaller screens */
+                margin: 0 20px; /* Adjust margins for smaller screens */
             }
             h1{
-                font-size: 8vw;
+                font-size: 30px;
             }
             p{
-                font-size: 5.33vw;
-				margin: 5.3vw;
+                font-size: 20px;
             }
             label{
-                font-size: 4.77vw	;
+                font-size: 18px;
             }
-			input[type="submit"] {
-				font-size: 6vw;
-			}
             /* Add any other style adjustments for mobile devices here */
         }
     </style>
@@ -163,7 +125,7 @@
             <label for="myCheckbox">Αποδέχομαι τους όρους χρήσης και αναγνωρίζω πως ο τίτλος<br>"Ψάρι Κλόουν" μου ανήκει δικαιωματικά.</label>
             <br><br>
             
-            <input type="submit" value="Υποβολή">
+            <input type="submit" value="Submit">
         </form>
     </div>
 </body>
