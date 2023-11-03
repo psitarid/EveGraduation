@@ -64,11 +64,17 @@
         }
 
         /* Increase font size for form elements */
-        label, input, textarea, checkbox {
+		label, input, textarea, checkbox {
             font-size: 2.8vh;/* Adjust the font size as needed */
             margin-bottom: 1.5vh; /* Add some spacing between elements */
 			font-family: "Calibri", sans-serif;
+			align: center;
         }
+		input[type="password"]{
+			align: center;
+			width: 40vh;
+		}
+		
 
         /* Style the submit button with the desired color */
         input[type="submit"] {
@@ -91,7 +97,7 @@
 			body {
             position: absolute; /* Add relative positioning to the body */
             margin: 0; /* Remove default margin */
-            height: 90vh; /* Full viewport height */
+            height: 100vh; /* Full viewport height */
             width: 100vw; /* Full viewport width */
             box-sizing: border-box; /* Include padding and border in element's total width and height */
 			display: flex; /* Enable Flexbox */
@@ -125,6 +131,10 @@
             }
 			input[type="submit"] {
 				font-size: 6vw;
+			}
+			input[type="password"]{
+				align: center;
+				width: 50vw;
 			}
             /* Add any other style adjustments for mobile devices here */
         }
