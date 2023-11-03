@@ -24,45 +24,23 @@
         }
 
         body:before {
-            content: '';
-            position: absolute;
-            top: 10px; /* Adjust as needed for top margin */
-            right: 10px; /* Adjust as needed for right margin */
-            bottom: 10px; /* Adjust as needed for bottom margin */
-            left: 10px; /* Adjust as needed for left margin */
-            border: 5px solid #A884B6; /* Your outline */
-			border-radius: 15px; /* Add rounded corners */
+			content: '';
+			position: absolute;
+			top: 1vh; /* Adjust as needed for top margin */
+			right: 1vh; /* Adjust as needed for right margin */
+			bottom: 1vh; /* Adjust as needed for bottom margin */
+			left: 1vh; /* Adjust as needed for left margin */
+			border: 0.75vh solid #A884B6; /* Your outline */
+			border-radius: 1.4vh; /* Add rounded corners */
 			pointer-events: none; /* Ignore pointer events */
-        }
+		}
 
         /* Center-align text within the container */
         .container {
             text-align: center;
-			margin: 20px; /* Add margin to the top and bottom for mobile view */
-			position: relative;
-			top: 6px;
         }
 
-        /* Additional styles for your form elements */
-        form {
-            padding: 30px; /* Increase padding for form */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-        }
-
-        /* Increase font size for headers and paragraphs */
-        h1 {
-            font-size: 28px; /* Adjust the font size for h1 */
-            margin-bottom: 15px; /* Add some spacing between elements */
-        }
-
-        p {
-            font-size: 24px; /* Adjust the font size for paragraphs */
-            text-align: justify; /* Justify the text within paragraphs */
-			margin: 0px 315px;
-			
-        }
-		
+        
 		@media (max-width: 768px) {
 			body {
 			margin: 0; /* Reset margin to 0 for smaller screens */
@@ -70,36 +48,24 @@
 			p{
 				margin: 0;
 			}
+			.image_desktop {
+				display: none;
+			}
 		}
 
-        /* Increase font size for form elements */
-        label, input, textarea, checkbox {
-            font-size: 20px; /* Adjust the font size as needed */
-            margin-bottom: 10px; /* Add some spacing between elements */
-        }
-
-        /* Style the submit button with the desired color */
-        input[type="submit"] {
-            background-color: #A884B6; /* Set the background color to #A884B6 */
-            color: white;
-            border: none;
-            padding: 12px 24px; /* Increase padding for the button */
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 22px; /* Increase font size for the button text */
-        }
 		
 		@media (min-width: 768px) {
-			input[type="submit"] {
-			margin-top: 20px; /* Reset margin to 0 for smaller screens */
-			}
 			.image_desktop {
-				width: 1000px; /* Set the desired width */
-				height: 500px; /* Set the desired height */
-				display: block;
-				margin: 0 auto;
+				width: 140vh; /* Set the desired width */
+				height: 70vh; /* Set the desired height */
+				margin: 0;
+				text-align: center;
+			}
+			.image_mobile {
+				display: none;
 			}
 		}
+		
 
         /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
         @media (max-width: 768px) {
@@ -118,39 +84,38 @@
 			}
 
 			body:before {
-				content: '';
-				position: absolute;
-				top: 10px; /* Adjust as needed for top margin */
-				right: 10px; /* Adjust as needed for right margin */
-				bottom: 10px; /* Adjust as needed for bottom margin */
-				left: 10px; /* Adjust as needed for left margin */
-				border: 5px solid #A884B6; /* Your outline */
-				border-radius: 15px; /* Add rounded corners */
-				pointer-events: none; /* Ignore pointer events */
-			}
+            content: '';
+            position: absolute;
+            top: 2vw; /* Adjust as needed for top margin */
+            right: 2vw;; /* Adjust as needed for right margin */
+            bottom: 2vw;; /* Adjust as needed for bottom margin */
+            left: 2vw;; /* Adjust as needed for left margin */
+            border: 1.5vw solid #A884B6; /* Your outline */
+			border-radius: 4.5vw; /* Add rounded corners */
+			pointer-events: none; /* Ignore pointer events */
+        }
             .container {
-                margin: 0px 20px; /* Adjust margins for smaller screens */
-            }
-			h1{
-				font-size: 30px;
+				text-align: center;
 			}
-			p{
-                font-size: 20px;
-				margin: 20px;
-            }
-            /* Add any other style adjustments for mobile devices here */
 			
+			.image_mobile {
+				width: 10vw; /* Set the desired width */
+				height: 20vw; /* Set the desired height */
+				margin: 0;
+				text-align: center;
+			}
 			
         }
 		
     </style>
 </head>
 <body>
-    <div class=" centered-container">
+    <div class=" container">
         <h1></h1>
         
        
-		<img src="tickets_desktop.png" alt="A beautiful sunset" class="image_desktop">
+		<img src="tickets_desktop.png" alt="tickets_desktop" class="image_desktop">
+		<img src="tickets_mobile.png" alt="tickets_mobile" class="image_mobile">
 
     </div>
 </body>
